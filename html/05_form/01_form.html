@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <form action="https://search.naver.com/search.naver?query" method="POST">
+            <!--form 태그만으로는 아무것도 입력받지 못하고
+            input 등의 태그가 필요합니다-->
+        <label for="name">Name(4 to 8 Characters):</label>
+
+        <!--name을 수취인이라고 생각하면 된다.-->
+        <!--사용자가 입력한 값이외에 기본값으로 설정된 값이자동으로 넘어가기도 함 -->
+        <input type="text" name="query">
+        <input type="text" name="query">
+        <button>검색</button>
+
+        <!--GET 방식은 주소지에 입력값 붙어간다. 
+            아이디 비밀번호 등을 입력했을 때 주소지에 노출되지 않게 
+            POST 방식을 쓴다. -->
+
+        <br> 
+
+        <lablel for="company_select">Choose representative company</lablel>
+        <br>
+        <select name="company" id="company_select">
+            <option value="">--choose a company name--</option>
+            <option value="rpa">Recovery Public Adjuster</option>
+            <option value="claimstar">Claim Star</option>
+            <option value="atlas">Atlas Builder</option>
+            <option value="enter">Enter Construction</option>
+
+        </select>
+        </form>   
+    </body>
+</html>

@@ -1,0 +1,37 @@
+
+.fit {
+    background-color: yellow;
+    width: fit-content;
+}
+
+.orange {
+    color: orangered;
+}
+
+#tomato {
+    background-color: tomato;
+}
+
+li.orange {
+    background-color: orange;
+}
+
+p#tomato {
+    background-color: tomato;
+}
+
+#apple, .center {
+    color: red;
+}
+
+h1.yellow.low.primary.center {
+    background-color: blue;
+}
+
+div > .center { 
+    background-color: orange;
+}
+
+body .li{
+    color: green;
+}

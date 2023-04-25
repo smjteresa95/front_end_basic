@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            *이름 : <input type="text" value="default" readonly><br>
+            *비번 : <input type="password"> <br>
+            *메일 : <input type="email" placeholder="input email"><br>
+
+            *취미 : 
+            <input type="checkbox"> 여행
+            <input type="checkbox" checked> 요리
+            <input type="checkbox" disabled> 게임
+
+            <br>
+
+            *광고데이터 수신
+            <input type="radio" name="ad" checked> 예
+            <input type="radio" name="ad"> 아니오
+
+            <br>
+            *자동구독여부
+
+            <input type="radio" name="auto" checked> 예
+            <input type="radio" name="auto">아니오
+
+            <br>
+            *구독 개월수
+            <input type="number" max="10" value="1">
+            <input type="range" min="0" max="5" value="3">
+
+            <br>
+            *파일첨부
+            <input type="file" multiple>
+            <br>
+
+            <!--사용자 몰래 보내는 데이터-->
+            <input type="hidden" name="nickname" value="바보">
+            <br>
+
+            <label for="story">Tell us your story</label>
+            <textarea id="story" name="story" rows="5" cols="40">write anything..</textarea>
+
+            <br>
+            <!--누르면 데이터가 서버로 넘어간다.-->
+            <input type="submit" value="submit form">
+        </form>
+    </body>
+</html>

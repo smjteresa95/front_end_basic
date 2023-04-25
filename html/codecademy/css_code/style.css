@@ -1,0 +1,21 @@
+body{
+    background: #141E30;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    color: #FFF;
+    font-size: 2em;
+
+}
+p{
+    color: aliceblue;
+}
+.byline{
+    font-family: Helvetica;
+    color: rgba(255, 255, 255, 0.5);
+    float: left;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
