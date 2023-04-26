@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+        <style>
+            html {
+                font-size: 10px;
+            }
+
+            body {
+                font-size: 15px;
+            }
+
+            div {
+                border: 2px solid gray;
+            }
+
+            /*em은 자기 자신한테 걸린 것에 곱한 값*/
+            .root {
+                width: 40em; /*width 40 *15 = 600px을 width로 가짐.*/
+                font-size: 20px; /*해당구문 추가시 40em은 800px이 됨*/
+            }
+
+            .parent {
+                width: 50%;
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <!--emmet으로 아래를 작성하려면?-->
+        <!-- .root>.parent.>.child -->
+        <div class="root"> root
+            <div class="parent"> parent
+                <div class="child"> child1</div>
+                <div class="child"> child2</div>
+            </div>
+        </div>
+    </body>
+</html>

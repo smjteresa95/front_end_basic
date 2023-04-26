@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+        <style>
+            .exciting-text::after {
+                content: " <-EXCITING";
+                color: green;
+            }
+
+            .boring-text::before { 
+                content: "BORING -> ";
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="boring-text">Here's some plain old boring text</p>
+
+        <P>Here's some normal text that is neither boring nor exciting</P>
+
+        <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+        <style>
+            /*padding은 본질적인 크기에 변화가 있을 수 있는 반면,
+            margin은 크기에 변화가 없다. */
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container { 
+                width: 400px;
+                height: 300px;
+
+            }
+
+            .box:last-child {
+                margin: 0 auto;
+                /*상하는 0, 좌우는 auto인데 좌우를 auto로 주면 가운데 정렬*/
+            }
+
+            .item { 
+                width: 200px;
+                height: 200px;
+                background: skyblue;
+
+                margin: 20px; /*상하좌우전방향*/
+
+                margin: 30px 50px; /* 상하 좌우*/
+
+                margin: 40px 50px 60px; /*상, 좌우, 하*/
+
+                margin: 10px 20px 30px 40px; /*상, 하, 좌, 우*/
+            }
+
+            .text {
+                /*text-align은 박스 안에서 
+                텍스트 중앙정렬 margin:0 auto는
+                부모박스 안에서 자식을 가로방향으로 중앙정렬
+                필수적으로 자식의 가로너비가 부모의 가로너비보다 짧아야 여유공간을 배분 할 수 있다.*/
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="text">하하호호</div>
+        </section>
+
+        
+
+
+    </body>
+</html>

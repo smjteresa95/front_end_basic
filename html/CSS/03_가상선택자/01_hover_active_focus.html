@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+        <style>
+            /*마우스가 해당 요소에 올라간 동안만 작동*/
+            :hover {
+                font-size: 20px;
+                font-weight: 700;
+                color: blue;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background: orange;
+            }
+
+            .box:hover { 
+                width: 200px;
+                background: green;
+            }
+
+            .box:active {
+                height: 200px;
+                background-color: salmon;
+            }
+
+            /*focus: 요소에 포커싱(tab으로 이동, 입력창 클릭)*/
+
+            #common { 
+                width: 100px;
+                outline: none;
+                padding: 5px;
+                margin-top: 20px;
+            }
+
+            #common:focus {
+                border-color: blue;
+                width: 200px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="#">안녕하세요</a>
+        <div class="box"></div>
+        <input type="text" id="common">
+    </body>
+</html>
